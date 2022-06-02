@@ -1,14 +1,7 @@
 #!/usr/bin/python3
-from sys import argv
+import hidden_4
 
-if (__name__ == "__main__"):
-    i = 1
-    result = 0
-    arguments = len(argv) - 1
-
-    if (arguments != 0):
-        while (i <= arguments):
-            result += int(argv[i])
-            i += 1
-    print(result)
-
+if __name__ == "__main__":
+    for function in dir(hidden_4):
+        if (function[0] != "_"):
+            print(function)
